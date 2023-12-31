@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+@keyframes animation {
+    from {
+        opacity: 0;
+        transform: translateY(27px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1,
+.intro {
+    animation: animation 1s ease-in-out;
+}
+
+.slider {
+    width: 100%;
+    min-height: 80vh;
+    aspect-ratio: 16/9;
+    position: relative;
+}
+
+.slider-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(40%);
+}
+
+.slider-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h1 {
+    color: #f4f4f4;
+    font-size: 4rem;
+    margin-bottom: 27px;
+}
+
+h2 {
+    color: #081733;
+    font-size: 2rem;
+    margin-bottom: 100px;
+}
+
+p {
+    color: #081733;
+    font-size: 1.5rem;
+    line-height: 1.5em;
+}
+
+.slider-content p {
+    color: #f4f4f4;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.boxed {
+    max-width: 1280px;
+    margin-inline: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.dark {
+    background: #081733;
+    color: #f4f4f4;
+}
+
+.white-title {
+    color: #f4f4f4;
+}
+
+.w40 {
+    width: 40%;
+}
+
+.w60 {
+    width: 60%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w25 {
+    width: 25%;
+}
+
+.w32 {
+    width: 32%;
+}
+
+.space-between {
+    justify-content: space-between;
+
+}
+
+.gap20 {
+    gap: 20px;
+}
+
+.skill {
+    background: #f4f4f4;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.skill img {
+    width: 100px;
+    height: 100px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+.skill h3 {
+    color: #000;
+    margin-top: 10px;
+}
+
+.jauge-js {
+    position: absolute;
+    top: -18px;
+    left: 0;
+    width: 100%;
+    height: 9px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+.jauge-js::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--level, 27%);
+    height: 100%;
+    background-color: #1b4ca7;
+    border-radius: 5px;
+    transition: width 0.5s ease-in;
+}
+
+.jauge-html-css {
+    position: absolute;
+    top: -18px;
+    left: 0;
+    width: 100%;
+    height: 9px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+.jauge-html-css::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--level, 80%);
+    height: 100%;
+    background-color: #1b4ca7;
+    border-radius: 5px;
+    transition: width 0.5s ease-in;
+}
+
+.jauge-py {
+    position: absolute;
+    top: -18px;
+    left: 0;
+    width: 100%;
+    height: 9px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+.jauge-py::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--level, 60%);
+    height: 100%;
+    background-color: #1b4ca7;
+    border-radius: 5px;
+    transition: width 0.5s ease-in;
+}
+
+.realisation {
+    background-color: #777;
+    height: auto;
+    aspect-ratio: 1/1;
+    position: relative;
+    transform: scale(1);
+    transition: 0.3s ease-in;
+}
+
+.realisation h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    width: max-content;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.realisation a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+.realisation img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+    transform: scale(1);
+    transition: 0.3s ease-in;
+}
+
+.realisation:hover {
+    transform: scale(1.05);
+    filter: brightness(70%);
+    transition: 0.3s ease-out;
+}
+
+.realisation:hover h3 {
+    opacity: 1;
+}
+
+.icon {
+    display: block;
+    font-size: 90px !important;
+    text-decoration: none;
+    color: #f4f4f4;
+    padding: 20px;
+}
+
+.link {
+    border: 2px solid #f4f4f4;
+    border-radius: 25px;
+    transform: scale(1);
+    transition: transform 0.3s ease-out;
+}
+
+.link:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in;
+}

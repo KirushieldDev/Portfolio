@@ -163,7 +163,6 @@ p {
     height: 100%;
     background-color: #1b4ca7;
     border-radius: 5px;
-    transition: width 0.5s ease-in;
 }
 
 .jauge-html-css {
@@ -185,7 +184,6 @@ p {
     height: 100%;
     background-color: #1b4ca7;
     border-radius: 5px;
-    transition: width 0.5s ease-in;
 }
 
 .jauge-py {
@@ -207,7 +205,6 @@ p {
     height: 100%;
     background-color: #1b4ca7;
     border-radius: 5px;
-    transition: width 0.5s ease-in;
 }
 
 .realisation {

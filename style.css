@@ -21,7 +21,6 @@ body {
     }
 }
 
-h1,
 .intro {
     animation: animation 1s ease-in-out;
 }

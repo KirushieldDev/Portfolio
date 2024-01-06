@@ -27,7 +27,7 @@ body {
 
 .slider {
     width: 100%;
-    min-height: 80vh;
+    min-height: 100vh;
     aspect-ratio: 16/9;
     position: relative;
 }
@@ -62,7 +62,7 @@ h2 {
 
 p {
     color: #081733;
-    font-size: 1.5rem;
+    font-size: 1.8em;
     line-height: 1.5em;
 }
 
@@ -213,6 +213,7 @@ p {
     position: relative;
     transform: scale(1);
     transition: 0.3s ease-in;
+    border-radius: 10%;
 }
 
 .realisation h3 {
@@ -235,18 +236,19 @@ p {
 }
 
 .realisation img {
-    width: 100%;
+    width: 80%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     filter: brightness(50%);
     transform: scale(1);
     transition: 0.3s ease-in;
 }
 
 .realisation:hover {
-    transform: scale(1.05);
+    transform: scale(0.97);
     filter: brightness(70%);
-    transition: 0.3s ease-out;
+    transition: 0.3s ease-in;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.38);
 }
 
 .realisation:hover h3 {
@@ -270,7 +272,14 @@ p {
 
 .link:hover {
     transform: scale(1.1);
-    transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.38);
+}
+
+.link:active {
+    transform: scale(0.98);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.38);
 }
 
 ::-webkit-scrollbar {

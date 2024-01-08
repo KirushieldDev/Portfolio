@@ -266,20 +266,12 @@ p {
 .link {
     border: 2px solid #f4f4f4;
     border-radius: 25px;
-    transform: scale(1);
     transition: transform 0.3s ease-out;
 }
 
 .link:hover {
-    transform: scale(1.1);
+    transform: translateY(-10px);
     transition: transform 0.3s ease-in-out;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.38);
-}
-
-.link:active {
-    transform: scale(0.89);
-    transition: transform 0.2s ease-in-out;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.38);
 }
 
 ::-webkit-scrollbar {

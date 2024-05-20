@@ -83,7 +83,7 @@ h2 {
 
 .scroll-down {
   position: absolute;
-  bottom: 5rem;
+  bottom: 20%;
   left: 50%;
   text-align: center;
   animation: zoom 1.5s;

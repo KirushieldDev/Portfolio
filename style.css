@@ -68,6 +68,37 @@ body {
   text-align: center;
 }
 
+.slider header {
+  position: absolute;
+  z-index: 1;
+  top: 3vw;
+  right: 4vw;
+}
+
+.slider header nav ul {
+  display: flex;
+  justify-self: space-around;
+  align-items: flex-end;
+  gap: 4vw;
+}
+
+.slider header nav ul li {
+  list-style: none;
+  letter-spacing: 1px;
+}
+
+.slider header nav ul li a {
+  color: #f4f4f4;
+  text-decoration: none;
+  font-size: 1.05rem;
+  transition: 0.2s ease-in-out;
+}
+
+.slider header nav ul li a:hover {
+  color: #71b6f7;
+  transition: 0.2s ease-in-out;
+}
+
 h1 {
   width: max-content;
   color: #f4f4f4;

@@ -1,3 +1,4 @@
+// Fonction pour le défilement fluide
 function smoothScroll(target) {
   const targetElement = document.querySelector(target);
   if (targetElement) {
@@ -8,9 +9,9 @@ function smoothScroll(target) {
   }
 }
 
-document
-  .querySelector(".scroll-down a")
-  .addEventListener("click", function (event) {
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (event) {
     event.preventDefault();
     smoothScroll(this.getAttribute("href"));
   });
+});

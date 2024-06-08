@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Portfolio | ELANKEETHAN Kirushikesan</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -13,8 +13,8 @@
       referrerpolicy="no-referrer"
     />
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
-
   <body>
     <div class="slider">
       <header>
@@ -24,6 +24,14 @@
             <li><a href="#competences">Mes compétences</a></li>
             <li><a href="#realisation">Mes réalisations</a></li>
             <li><a href="#contact">Contactez-moi</a></li>
+            <li>
+              <a href="#parcours">Mon parcours</a>
+            </li>
+            <li>
+              <a href="CV_ELANKEETHAN_Kirushikesan_BUT1.pdf" target="_blank"
+                >Mon CV</a
+              >
+            </li>
           </ul>
         </nav>
       </header>
@@ -45,16 +53,22 @@
           <div class="w40">
             <h2>À propos de moi</h2>
           </div>
-          <div class="w60">
-            <p>
-              Je m'appelle ELANKEETHAN Kirushikesan et je suis un étudiant en
-              première année de BUT informatique. Je suis passionné et
-              enthousiaste des nouvelles technologies et de la programmation.
-              J'aime beaucoup le développement des sites WEB. À l'issue de mon
-              BUT informatique j'aimerais devenir un ingénieur dans le
-              développement dans environ 6 ans. Et ainsi devenir un développeur
-              full stack.
-            </p>
+          <div class="w60 presentation">
+            <div class="partie-gauche">
+              <img src="img/photo_profil.png" alt="Photo de profil" />
+            </div>
+            <div class="partie-droite">
+              <p>
+                Je m'appelle ELANKEETHAN Kirushikesan et je suis un étudiant en
+                première année de BUT informatique à
+                <a href="https://iut.univ-gustave-eiffel.fr/" target="_blank"
+                  >l'IUT de Marne-la-vallée.</a
+                ><br />
+                Je suis à la recherche d'une alternance sur 2 ans avec un rythme
+                d'une semaine sur deux. À l'issue de ma formation j'aimerais
+                devenir un développeur Full Stack
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -63,7 +77,7 @@
     <div class="section dark" id="competences">
       <div class="boxed text-center">
         <h2 class="white-title">Mes compétences</h2>
-        <div class="flex gap20">
+        <div class="flex gap20 skills">
           <div class="w25 skill">
             <div class="jauge jauge-html-css"></div>
             <img src="img/html.png" />
@@ -84,6 +98,36 @@
             <img src="img/python.png" />
             <h3>Python</h3>
           </div>
+          <div class="w25 skill">
+            <div class="jauge jauge-mysql"></div>
+            <img src="img/mysql.png" />
+            <h3>MySQL</h3>
+          </div>
+          <div class="w25 skill">
+            <div class="jauge jauge-psql"></div>
+            <img src="img/psql.png" />
+            <h3>PSQL</h3>
+          </div>
+          <div class="w25 skill">
+            <div class="jauge jauge-php"></div>
+            <img src="img/php.png" />
+            <h3>PHP</h3>
+          </div>
+          <div class="w25 skill">
+            <div class="jauge jauge-c"></div>
+            <img src="img/c.png" />
+            <h3>C</h3>
+          </div>
+          <div class="w25 skill">
+            <div class="jauge jauge-java"></div>
+            <img src="img/java.png" />
+            <h3>Java</h3>
+          </div>
+          <div class="w25 skill">
+            <div class="jauge jauge-git"></div>
+            <img src="img/git.png" />
+            <h3>Git</h3>
+          </div>
         </div>
       </div>
     </div>
@@ -91,47 +135,271 @@
     <div class="section" id="realisation">
       <div class="boxed text-center">
         <h2>Mes réalisations</h2>
-        <div class="flex space-between">
-          <div class="w32 realisation">
-            <a
-              href="https://github.com/Kirushield/pierre-papier-ciseaux.git"
-              target="_blank"
-            >
+        <div class="realisations">
+          <div class="realisation">
+            <a href="#" id="pierre-feuille-ciseau">
               <img src="img/pierre-papier-ciseaux.png" />
               <h3 class="realisation-titre">Pierre-Feuille-Ciseau</h3>
             </a>
           </div>
-          <div class="w32 realisation">
-            <a
-              href="https://github.com/Kirushield/juste-prix.git"
-              target="_blank"
-            >
+
+          <div class="realisation">
+            <a href="#" id="juste-prix">
               <img src="img/prix.png" />
               <h3 class="realisation-titre">Juste prix</h3>
             </a>
           </div>
-          <div class="w32 realisation">
-            <a
-              href="https://github.com/Kirushield/simulateur-bac-2023.git"
-              target="_blank"
-            >
+
+          <div class="realisation">
+            <a href="#" id="bac">
               <img src="img/bac.png" />
               <h3 class="realisation-titre">Simulateur BAC 2023</h3>
             </a>
           </div>
-          <div class="w32 realisation">
-            <a href="https://kirushield.github.io/calculator/" target="_blank">
+
+          <div class="realisation">
+            <a href="#" id="calculatrice">
               <img src="img/calculatrice.png" />
               <h3 class="realisation-titre">Calculatrice</h3>
             </a>
+          </div>
+
+          <div class="realisation">
+            <a href="#" id="unesco">
+              <img src="img/unesco.png" />
+              <h3 class="realisation-titre">Projet UNESCO</h3>
+            </a>
+          </div>
+
+          <div class="realisation">
+            <a href="#" id="polynome">
+              <img src="img/c.png" />
+              <h3 class="realisation-titre">Manipulation de polynômes</h3>
+            </a>
+          </div>
+
+          <div class="realisation">
+            <a href="#" id="qix">
+              <img src="img/python.png" />
+              <h3 class="realisation-titre">Projet QIX</h3>
+            </a>
+          </div>
+
+          <div class="popup popup-pierre-feuille-ciseau">
+            <div class="popup-content">
+              <h3>Pierre-Feuille-Ciseau</h3>
+              <div class="contenus">
+                <img src="img/pierre-papier-ciseaux.png" />
+                <p>
+                  Ce projet est un jeu de Pierre - Feuille - Ciseau créé avec
+                  Python et l'interface graphique Tkinter. Conçu comme un
+                  passe-temps pendant mes vacances au lycée, ce jeu permet aux
+                  joueurs de défier l'ordinateur dans des matchs rapides et
+                  amusants.
+                  <a
+                    href="https://github.com/Kirushield/pierre-papier-ciseaux"
+                    target="_blank"
+                    >Voir le code source de ce projet</a
+                  >
+                </p>
+              </div>
+              <img src="img/close.png" class="close" />
+            </div>
+          </div>
+
+          <div class="popup popup-juste-prix">
+            <div class="popup-content">
+              <h3>Juste prix</h3>
+              <div class="contenus">
+                <img src="img/prix.png" />
+                <p>
+                  Ce projet est une application de jeu "Juste-prix" développée
+                  avec Python et Tkinter, où l'utilisateur doit deviner un
+                  nombre aléatoire. C'était un projet de passe-temps que j'ai
+                  créé pendant mes vacances au lycée, offrant une expérience
+                  ludique et simple.
+                  <a
+                    href="https://github.com/Kirushield/juste-prix"
+                    target="_blank"
+                    >Voir le code source de ce projet</a
+                  >
+                </p>
+              </div>
+              <img src="img/close.png" class="close" />
+            </div>
+          </div>
+
+          <div class="popup popup-bac">
+            <div class="popup-content">
+              <h3>Simulateur BAC 2023</h3>
+              <div class="contenus">
+                <img src="img/bac.png" />
+                <p>
+                  Ce projet est une application pour aider les étudiants à
+                  calculer leur moyenne au baccalauréat. Il permet de saisir les
+                  notes des épreuves. Il a été réalisé avec Python et
+                  l'interface graphique Tkinter.
+                  <a
+                    href="https://github.com/Kirushield/simulateur-bac-2023"
+                    target="_blank"
+                    >Voir le code source de ce projet</a
+                  >
+                </p>
+              </div>
+              <img src="img/close.png" class="close" />
+            </div>
+          </div>
+
+          <div class="popup popup-calculatrice">
+            <div class="popup-content">
+              <h3>Calculatrice</h3>
+              <div class="contenus">
+                <img src="img/calculatrice.png" />
+                <p>
+                  Ce projet est une
+                  <a
+                    href="https://kirushield.github.io/calculator/"
+                    target="_blank"
+                    >calculatrice</a
+                  >
+                  web simple développée en HTML, CSS et JavaScript. Elle permet
+                  d'effectuer des opérations mathématiques basiques telles que
+                  l'addition, la soustraction, la multiplication et la division.
+                  <a
+                    href="https://github.com/Kirushield/calculator"
+                    target="_blank"
+                    >Voir le code source de ce projet</a
+                  >
+                </p>
+              </div>
+              <img src="img/close.png" class="close" />
+            </div>
+          </div>
+
+          <div class="popup popup-unesco">
+            <div class="popup-content">
+              <h3>Projet UNESCO</h3>
+              <div class="contenus">
+                <img src="img/unesco.png" />
+                <p>
+                  Ce projet a été réalisé lors de ma première année en BUT
+                  Informatique. En partenariat avec l'UNESCO, j'ai pu produire
+                  un site sur la ville de
+                  <a
+                    href="https://epsidev.github.io/SAE-Unesco/fr/"
+                    target="_blank"
+                    >Fontainebleau</a
+                  >. J'ai pû acquérir de l'expérience en HTML/CSS/JS/SQL et PHP.
+                  <a
+                    href="https://github.com/EpsiDEV/SAE-Unesco"
+                    target="_blank"
+                    >Voir le code source de ce projet</a
+                  >
+                </p>
+              </div>
+              <img src="img/close.png" class="close" />
+            </div>
+          </div>
+
+          <div class="popup popup-polynome">
+            <div class="popup-content">
+              <h3>Manipulation de polynômes</h3>
+              <div class="contenus">
+                <img src="img/c.png" />
+                <p>
+                  Lors de la première année en BUT informatique, j'ai pu
+                  implémenter des fonctions de manipulations de polynômes en C.
+                  <a
+                    href="https://github.com/Kirushield/Manipulation-de-polynomes"
+                    target="_blank"
+                    >Voir le code source de ce projet</a
+                  >
+                </p>
+              </div>
+              <img src="img/close.png" class="close" />
+            </div>
+          </div>
+
+          <div class="popup popup-qix">
+            <div class="popup-content">
+              <h3>Projet QIX</h3>
+              <div class="contenus">
+                <img src="img/python.png" />
+                <p>
+                  Ce projet est un jeu de QIX. Il a été réalisé en première
+                  année de BUT informatique pour découvrir le développement de
+                  Python.
+                  <a
+                    href="https://github.com/Kirushield/SAE-python"
+                    target="_blank"
+                    >Voir le code source de ce projet</a
+                  >
+                </p>
+              </div>
+              <img src="img/close.png" class="close" />
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <footer class="section dark" id="contact">
+    <div class="section parcours dark" id="parcours">
+      <h2 class="text-center">Mon parcours</h2>
+      <div class="frise">
+        <div class="timeline" data-aos="fade-down" data-aos-duration="1000">
+          <div class="timeline-object complete">
+            <div class="timeline-status"></div>
+            <div class="timeline-content">
+              <h3>Stage de 3ème chez Resoneo</h3>
+              <span>Déc 2019</span>
+            </div>
+          </div>
+
+          <div
+            class="timeline-object complete"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            <div class="timeline-status"></div>
+            <div class="timeline-content">
+              <h3>Brevet au collège Jacque Yves Cousteau (77600)</h3>
+              <span>2019 - 2020</span>
+            </div>
+          </div>
+
+          <div
+            class="timeline-object complete"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            <div class="timeline-status"></div>
+            <div class="timeline-content">
+              <h3>
+                Baccalauréat STI2D option SIN au lycée Martin Luther King
+                (77600)
+              </h3>
+              <span>2022 - 2023</span>
+            </div>
+          </div>
+
+          <div
+            class="timeline-object"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            <div class="timeline-status"></div>
+            <div class="timeline-content">
+              <h3>BUT Informatique à l'IUT de Marne-la-Vallée</h3>
+              <span>2023 - 2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="section" id="contact">
       <div class="boxed text-center">
-        <h2 class="white-title">Contactez-moi</h2>
+        <h2>Contactez-moi</h2>
         <div class="flex space-between contact">
           <a
             href="mailto:ekirushikesan@gmail.com"
@@ -171,5 +439,10 @@
     </footer>
 
     <script src="script.js"></script>
+    <!-- Import pour les animations au scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
